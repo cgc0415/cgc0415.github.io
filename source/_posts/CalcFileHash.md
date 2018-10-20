@@ -17,12 +17,8 @@ tags: 小工具
 ### HashAlgorithm - Hash算法，目前该工具有以下几种选项：MD2 MD4 MD5 SHA1 SHA256 SHA384 SHA512
 
 ###  示例：
-<div align="left">
-<img src="CalcFileHash/calcfilehash.png" height="78" width="553">
-</div>
-
+{% asset_img calcfilehash.png pic:CalcFileHash 553 78 %}
 
 # 2、Linux系统
 
 ## md5sum 等命令
-
