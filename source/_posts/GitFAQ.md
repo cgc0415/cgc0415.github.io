@@ -35,6 +35,7 @@ origin  git@github.com:cgc0415/hello-world.git (push)
 上面命令表示，当前只有一台远程主机，叫做origin，以及它的网址。
 ### git pull
 `git pull`命令的作用是，取回远程主机某个分支的更新，再与本地的指定分支合并。它的完整格式稍稍有点复杂。
+
 ```
 $ git pull <远程主机名> <远程分支名>:<本地分支名>
 ```
@@ -51,6 +52,7 @@ $ git pull
 上面命令表示，当前分支自动与唯一一个追踪分支进行合并。
 ### git push
 `git push`命令用于将本地分支的更新，推送到远程主机。它的格式与`git pull`命令相仿。
+
 ```
 $ git push <远程主机名> <本地分支名>:<远程分支名>
 ```
@@ -142,6 +144,14 @@ git reflog show --date=iso branchname
 
 > 当从master拉完分支，修改后，发现需要合入master分支上最新的commit时，可以先提交该分支上的修改，然后checkout到master上，git pull到最新，然后切回分支，执行 git rebase master 即可。
 
+### 修改commit信息
+有时候我们执行`git commit`命令提交完了才发现漏掉了几个文件没有加，或者提交信息写错了。想要撤消刚才的提交操作，可以使用`--amend` 选项重新提交：
+```
+$ git commit -m 'initial commit'
+$ git add forgotten_file
+$ git commit --amend -m "the correct commit."
+```
+在`initial commit`之后，如果没有文件修改遗漏，只是需要修改提交信息的话，直接跳到`git commit --amend -m "the correct commit."` 即可。
 ### 回退节点
 ```
 git reset --hard commitid
