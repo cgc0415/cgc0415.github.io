@@ -3,6 +3,69 @@
   
     
     <entry>
+      <title>0022-工具技巧</title>
+      <link href="/2019/05/31/0022-EfficiencyToolSkills/"/>
+      <url>/2019/05/31/0022-EfficiencyToolSkills/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1、SecureCRT保存日志"><a href="#1、SecureCRT保存日志" class="headerlink" title="1、SecureCRT保存日志"></a>1、SecureCRT保存日志</h3><p>（1） 打开<code>Options-&gt;Session Options...</code>，，选择<code>LogFile</code><br>（2） Log file name格式</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%H_%S_%Y%M%D-%h%m%s.log</span><br></pre></td></tr></table></figure><p>参数说明：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">%H---主机IP</span><br><span class="line">%S---Session名</span><br><span class="line">%Y%M%D---年月日</span><br><span class="line">%h%m%s---时分秒</span><br></pre></td></tr></table></figure><h3 id="2、VS（Visual-Studio）输出重定向到文件"><a href="#2、VS（Visual-Studio）输出重定向到文件" class="headerlink" title="2、VS（Visual Studio）输出重定向到文件"></a>2、VS（Visual Studio）输出重定向到文件</h3><p>（1）、右键点击解决工程-&gt;项目属性</p><p>（2）、配置属性-&gt;生成事件-&gt;生成后事件</p><p>在命令行中输入<code>&quot;$(TargetPath)  &gt;$(outdir)\1.txt&quot;</code></p><p>（3）、重新编译整个项目，此时就会在debug目录下多了一个1.txt文件，里面就是程序运行时的控制台输出结果。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 工具技巧 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>0021-安全技术</title>
+      <link href="/2019/05/31/0021-SecurityTechnology/"/>
+      <url>/2019/05/31/0021-SecurityTechnology/</url>
+      
+        <content type="html"><![CDATA[<p>1、Kali中面向WiFi的工具，像Aircrack-ng、Kismet、以及 Pixie。<br>2、对于破解密码，它也有像 Hydra、Crunch、Hashcat、以及 John the Ripper 这样的工具。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 安全相关 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 安全相关 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>0020-Linux-samba服务</title>
+      <link href="/2019/05/31/0020-Linux-samba/"/>
+      <url>/2019/05/31/0020-Linux-samba/</url>
+      
+        <content type="html"><![CDATA[<p>1、查看samba服务状态</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service smb status</span><br></pre></td></tr></table></figure><p>2、启动samba服务<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service smb start</span><br></pre></td></tr></table></figure></p><p>3、停止samba服务</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service smb stop</span><br></pre></td></tr></table></figure><p>4、samba配置文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/samba/smb.conf</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux相关 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> samba </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>0019_第一个Java程序</title>
       <link href="/2018/11/07/0019-Java-HelloWorld/"/>
       <url>/2018/11/07/0019-Java-HelloWorld/</url>
