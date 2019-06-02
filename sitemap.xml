@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2019/06/02/0023-RaspBerryPi/</loc>
+    
+    <lastmod>2019-06-02T06:14:27.110Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/05/31/0021-SecurityTechnology/</loc>
     
     <lastmod>2019-05-31T14:27:24.415Z</lastmod>
@@ -93,14 +100,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/10/26/LinuxManualFunctionNum/</loc>
+    <loc>http://yoursite.com/2018/10/27/LinuxSwap/</loc>
     
     <lastmod>2019-05-31T13:39:57.164Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/10/27/LinuxSwap/</loc>
+    <loc>http://yoursite.com/2018/10/26/LinuxManualFunctionNum/</loc>
     
     <lastmod>2019-05-31T13:39:57.164Z</lastmod>
     
@@ -163,14 +170,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/10/27/0015-LearnLinux/</loc>
+    <loc>http://yoursite.com/2018/10/27/0014-proc-maps/</loc>
     
     <lastmod>2019-05-31T13:39:57.147Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/10/27/0014-proc-maps/</loc>
+    <loc>http://yoursite.com/2018/10/27/0015-LearnLinux/</loc>
     
     <lastmod>2019-05-31T13:39:57.147Z</lastmod>
     
