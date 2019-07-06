@@ -143,6 +143,9 @@ git reflog show --date=iso branchname
 ### git-rebase
 
 > 当从master拉完分支，修改后，发现需要合入master分支上最新的commit时，可以先提交该分支上的修改，然后checkout到master上，git pull到最新，然后切回分支，执行 git rebase master 即可。
+>
+> 冲突处理：
+> 在进行rebase操作时，可能会遇到文件存在冲突的情况，这时git会显示出存在冲突的（CONFLICT）文件名，可以用beyondcompare进行比较，手动解决冲突后，再用git add来标识该文件冲突已解决，当冲突解决后再执行git rebase --continue即可。
 
 ### 修改commit信息
 有时候我们执行`git commit`命令提交完了才发现漏掉了几个文件没有加，或者提交信息写错了。想要撤消刚才的提交操作，可以使用`--amend` 选项重新提交：
