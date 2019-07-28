@@ -144,8 +144,13 @@ git reflog show --date=iso branchname
 
 > 当从master拉完分支，修改后，发现需要合入master分支上最新的commit时，可以先提交该分支上的修改，然后checkout到master上，git pull到最新，然后切回分支，执行 git rebase master 即可。
 >
-> 冲突处理：
+#### 冲突处理：
 > 在进行rebase操作时，可能会遇到文件存在冲突的情况，这时git会显示出存在冲突的（CONFLICT）文件名，可以用beyondcompare进行比较，手动解决冲突后，再用git add来标识该文件冲突已解决，当冲突解决后再执行git rebase --continue即可。
+#### 合并最近两次提交
+> （1）、git rebase -i HEAD~2（合并最近2次commit）
+> （2）、执行完1后，即进入commit信息编辑界面，在这里将第一次提交改为pick，第2次提交改为squash，意思就是将第二次提交合并到第一次提交上。编辑完后输入:wq保存退出，即进入步骤3。
+> （3）、在第2步执行完后即进入注释修改界面，可以将第2次commit信息删除，将第1次commit信息修改为想要的内容，之后输入:wq保存并退出。
+> （4）、使用git log查看最近commit记录，发现最近2次提交已被合并为一个。
 
 ### 修改commit信息
 有时候我们执行`git commit`命令提交完了才发现漏掉了几个文件没有加，或者提交信息写错了。想要撤消刚才的提交操作，可以使用`--amend` 选项重新提交：
